@@ -5,11 +5,15 @@ const overlay = document.querySelector(`.popup__overlay`);
 const popupBtn = document.querySelector(`.popup__submit`);
 
 const openPopup = function () {
-  popup.classList.add(`popup__show`);
+  setTimeout(() => {
+    popup.classList.add(`popup__show`);
+  }, 600);
 }
 
 const closePopup = function () {
-  popup.classList.remove(`popup__show`);
+  setTimeout(() => {
+    popup.classList.remove(`popup__show`);
+  }, 600);
 }
 
 function orderHandler() {

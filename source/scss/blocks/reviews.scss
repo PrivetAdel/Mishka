@@ -22,6 +22,8 @@
   flex-direction: column;
   max-width: 81.25%;
   margin: 0 auto;
+  transition: all .6s;
+  min-height: 640px;
 
   @media (min-width: $tablet-width) {
     max-width: 86.98%;
@@ -29,11 +31,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 531px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 91.31%;
     padding: 78px 0 103px 174px;
+    min-height: 543px;
   }
 }
 
@@ -89,6 +93,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     font-size: 17px;
     order: 1;
     position: relative;
@@ -96,7 +101,13 @@
 }
 
 .reviews__blockquote {
+  display: none;
   margin: 0 0 30px;
+  transition: all .6s;
+}
+
+.reviews__blockquote:first-child {
+  display: block;
 }
 
 .reviews__text {
@@ -209,4 +220,16 @@
   @media (min-width: $desktop-width) {
     margin: 7px 0;
   }
+}
+
+@keyframes display {
+  0% { opacity: 0 }
+  50% { opacity: 0.5 }
+  100% { opacity: 1}
+}
+
+@keyframes fade {
+  0% { opacity: 1 }
+  50% { opacity: 0.5 }
+  100% { opacity: 0}
 }
