@@ -1,0 +1,127 @@
+.card {
+  border: 1px solid $color-light-grey;
+  margin-bottom: 29px;
+  transition: .3s all;
+
+  &:hover {
+    box-shadow: 0 0 7px rgba(0, 0, 0, .2);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    max-height: 334px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    max-height: 660px;
+    height: 660px;
+    flex-direction: column;
+  }
+}
+
+.card__picture img {
+  min-width: 260px;
+  min-height: 195px;
+  width: 100%;
+  background-color: $color-grey;
+
+  @media (min-width: $desktop-width) {
+    max-height: 465px;
+  }
+}
+
+.card__description {
+  padding: 0 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
+.card__link h3 {
+  font-size: 17px;
+  line-height: 24px;
+  margin: 21px 0 5px;
+  cursor: pointer;
+  transition: .3s all;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .4;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+  }
+}
+
+.card__description p {
+  font-size: 13px;
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+}
+
+.card__price {
+  display: flex;
+  font-weight: $bold;
+  justify-content: space-between;
+  border-top: 1px solid $color-light-grey;
+  margin-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 2px;
+    margin-top: auto;
+  }
+}
+
+.card__price p {
+  font-size: 15px;
+  line-height: 24px;
+  padding: 21px 0 27px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.card__icon {
+  fill: $color-grey;
+  padding: 20px;
+  width: 61px;
+  height: 58px;
+  margin-right: -20px;
+  cursor: pointer;
+
+  &:hover {
+    fill: $color-turquoise;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    opacity: .6;
+    transform: scale(.98);
+  }
+}

@@ -1,0 +1,46 @@
+.copyright {
+  padding: 23px 0;
+  max-width: 81.25%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 23.3%;
+    padding: 27px 0 27px 39px;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 164px;
+  }
+}
+
+.copyright span {
+  @media (min-width: $tablet-width) {
+    padding-right: 28px;
+  }
+}
+
+.copyright__link {
+  font-size: 19px;
+  line-height: 1;
+  font-weight: $bold;
+  color: $color-black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &:hover {
+    .copyright__icon {
+      fill: $color-dark-turquoise;
+    }
+  }
+
+  &:active {
+    opacity: .6;
+  }
+}
+
+.copyright__icon {
+  fill: $color-turquoise;
+}

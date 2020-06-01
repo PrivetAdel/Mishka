@@ -1,0 +1,75 @@
+.page-form__title {
+  background-color: $color-light-grey;
+  text-align: center;
+  margin-bottom: 23px;
+  position: relative;
+  border-top: 1px solid #dfdfdf;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -70px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: -11px;
+      width: 100%;
+      height: 24px;
+      background-image: url('../img/bg-zigzag-fill.svg');
+      background-position-x: center;
+      background-size: auto 22.8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -72px;
+
+    &::after {
+      bottom: -24px;
+      height: 43px;
+      background-size: auto 34px;
+    }
+  }
+}
+
+.page-form__title h2 {
+  padding: 70px 0 75px;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 92px 0 82px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 103px;
+  }
+}
+
+.page-form__subtitle {
+  width: 81.25%;
+  font-size: 13px;
+  margin: 0 auto;
+
+  & p {
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 86.98%;
+    margin: 73px auto 12px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60.87%;
+    margin-top: 123px;
+  }
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Mishka</title>
+</head>
+<body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <nav class="main-nav main-nav__nojs">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__wrap">
+            <a class="main-nav__link" href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+              </picture>
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть/Закрыть меню</span>
+              <span class="main-nav__btn"></span>
+            </button>
+          </div>
+        </div>
+        <ul class="main-nav__list main-nav__list--nav">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__item main-nav__item--user">
+            <a href="#">
+              <svg class="main-nav__icon" width="18" height="19">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+              <span>Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--user">
+            <a href="#">
+              <svg class="main-nav__icon" width="21" height="18">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--promo">
+          <li class="main-nav__item main-nav__item--promo">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--promo">
+            <a href="#">Распродажа</a>
+          </li>
+          <li class="main-nav__item main-nav__item--promo">
+            <a href="#">Бесплатная доставка по России</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Mishka - интернет магазин изделий ручной работы. Главная страница.</h1>
+    <section class="title">
+      <div class="title__wrapper wrapper">
+        <div class="title__title">
+          <h2>Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
+        </div>
+        <ul class="title__list">
+          <li class="title__item">
+            <div class="title__wrap">
+              <a class="title__link title__link--interior" href="#">Предметы интерьера</a>
+            </div>
+          </li>
+          <li class="title__item">
+            <div class="title__wrap">
+              <a class="title__link title__link--toy" href="#">Детские игрушки</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="offer__wrapper wrapper">
+        <div class="offer__title">
+          <h2>Вязаные корзинки</h2>
+          <p>Товар недели</p>
+        </div>
+        <div class="offer__content">
+          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="offer__table">
+            <tr class="offer__row">
+              <td class="offer__cell offer__cell--name">Цвет:</td>
+              <td class="offer__cell offer__cell--value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="offer__row">
+              <td class="offer__cell offer__cell--name">Диаметр:</td>
+              <td class="offer__cell offer__cell--value">25 см</td>
+            </tr>
+            <tr class="offer__row">
+              <td class="offer__cell offer__cell--name">Высота:</td>
+              <td class="offer__cell offer__cell--value">15 см</td>
+            </tr>
+          </table>
+        </div>
+        <div class="offer__picture">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp-img/triple-set-desktop@1x.webp 1x, img/webp-img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp-img/triple-set-tablet@1x.webp 1x, img/webp-img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp-img/triple-set-mobile@1x.webp 1x, img/webp-img/triple-set-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Набор из трёх корзинок">
+          </picture>
+        </div>
+        <div class="offer__order">
+          <p class="offer__price">Цена: 990 руб.</p>
+          <button class="offer__button" type="button" name="button">Заказать</button>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="about-us__wrapper wrapper">
+        <h2>Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item about-us__item--icon-flower">Экологически чистые материалы</li>
+          <li class="about-us__item about-us__item--icon-money">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item about-us__item--icon-heart">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item about-us__item--icon-ball">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item about-us__item--icon-rocket">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--icon-gift">Поставляется в подарочной упаковке</li>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper wrapper">
+        <h2>Отзывы</h2>
+        <div class="reviews__slider">
+          <blockquote class="reviews__blockquote">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews__cite">
+              <span class="reviews__name">Анастасия Красильникова</span>
+              <a class="reviews__link" href="#">@misssssiskras</a>
+            </cite>
+          </blockquote>
+          <div class="reviews__controls">
+            <button type="button" name="button" class="previous">
+              <svg class="reviews-nav__arrow" width="50" height="26.003">
+                <use xlink:href="#icon-left-arrow"></use>
+              </svg>
+            </button>
+            <button type="button" name="button" class="next">
+              <svg class="reviews-nav__arrow" width="50" height="26.003">
+                <use xlink:href="#icon-right-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <button class="reviews__button" type="button" name="button">Написать</button>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper wrapper">
+        <h2>Контакты</h2>
+        <table class="contacts__table">
+          <tr class="contacts__row">
+            <td class="contacts__cell contacts__cell--name">e-mail:</td>
+            <td class="contacts__cell contacts__cell--value">
+              <a class="contacts__mailto" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </td>
+          </tr>
+          <tr class="contacts__row">
+            <td class="contacts__cell contacts__cell--name">адрес:</td>
+            <td class="contacts__cell contacts__cell--value">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</td>
+          </tr>
+        </table>
+        <button class="contacts__button button" type="button" name="button">Напишите нам</button>
+        <div id="map" class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1590248695863!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <a class="page-footer__link" href="#">
+          <svg class="page-footer__logo-svg" width="102" height="34">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
+          <span class="visually-hidden">Логотип магазина Mishka</span>
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">
+              <svg class="social__icon" width="22" height="21">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
+              <svg class="social__icon" width="15" height="29">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
+              <svg class="social__icon" width="24" height="20">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="#">
+          <span>Разработано</span>
+          <svg class="copyright__icon" width="27" height="34">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <section class="popup">
+    <div class="popup__overlay">
+      <div class="popup__wrapper">
+        <h2 class="popup__title">Добавить в&nbsp;корзину</h2>
+        <form class="popup__form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="popup__form-group">
+            <legend class="popup__legend">Выберите размер:</legend>
+            <div class="popup__inner">
+              <div class="popup__size-box">
+                <input class="popup__input" type="checkbox" name="size" value="S" id="s" checked>
+                <label class="popup__label" for="s">S</label>
+              </div>
+              <div class="popup__size-box">
+                <input class="popup__input" type="checkbox" name="size" value="M" id="m">
+                <label class="popup__label" for="m">M</label>
+              </div>
+              <div class="popup__size-box">
+                <input class="popup__input" type="checkbox" name="size" value="L" id="l">
+                <label class="popup__label" for="l">L</label>
+              </div>
+            </div>
+          </fieldset>
+          <button class="popup__submit button">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="js/menu.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>
