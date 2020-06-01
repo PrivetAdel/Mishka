@@ -136,7 +136,6 @@
 
 .title__wrap {
   max-width: 500px;
-  min-height: 121px;
   margin: 0 auto;
   position: relative;
 }
@@ -148,7 +147,8 @@
   text-align: left;
   font-weight: $bold;
   display: block;
-  padding: 25px 120px 25px 29px;
+  min-height: 103px;
+  padding: 25px 120px 30px 29px;
 
   @media (min-width: $tablet-width) {
     line-height: 30px;
