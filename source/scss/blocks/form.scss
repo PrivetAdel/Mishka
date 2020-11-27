@@ -104,8 +104,23 @@
   }
 }
 
+.form__group--radio {
+  div {
+    display: flex;
+  }
+}
+
 .form__group--radio input {
-  display: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+
+  &:focus + label::before {
+    border-color: $color-black;
+  }
 
   &:checked + label::after {
     content: '';
@@ -166,6 +181,28 @@
 }
 
 .form__group--checkbox {
+  div {
+    display: flex;
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 33px;
+      width: 48%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 33%;
+    }
+
+    &:last-child {
+      margin-bottom: 3px;
+    
+      @media (min-width: $tablet-width) {
+        margin-bottom: 41px;
+      }
+    }
+  }
+  
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -174,7 +211,16 @@
 }
 
 .form__group--checkbox input {
-  display: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+
+  &:focus + label::before {
+    border-color: $color-black;
+  }
 
   &:checked + label::after {
     content: '';
@@ -199,7 +245,6 @@
 
 .form__group--checkbox label {
   padding: 10px 0 10px 62px;
-  margin-bottom: 23px;
   position: relative;
 
   &::before {
@@ -214,8 +259,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 15px 0 10px 81px;
-    margin-bottom: 33px;
-    width: 48%;
 
     &::before {
       width: 50px;
@@ -223,18 +266,6 @@
       border: 2px solid $color-dark-grey;
       top: -1px;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 33%;
-  }
-}
-
-.form__group--checkbox label:last-child {
-  margin-bottom: 3px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
   }
 }
 

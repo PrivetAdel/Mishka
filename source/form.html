@@ -9,9 +9,11 @@
   <title>Mishka</title>
 </head>
 <body>
+
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
+
   <header class="page-header">
     <div class="page-header__wrapper">
       <nav class="main-nav main-nav__nojs">
@@ -30,6 +32,7 @@
             </button>
           </div>
         </div>
+
         <ul class="main-nav__list main-nav__list--nav">
           <li class="main-nav__item">
             <a href="catalog.html">Каталог товаров</a>
@@ -38,6 +41,7 @@
             <a href="#">Вязание на заказ</a>
           </li>
         </ul>
+        
         <ul class="main-nav__list main-nav__list--user">
           <li class="main-nav__item main-nav__item--user">
             <a href="#">
@@ -56,6 +60,7 @@
             </a>
           </li>
         </ul>
+
         <ul class="main-nav__list main-nav__list--promo">
           <li class="main-nav__item main-nav__item--promo">
             <a href="#">Новые поступления</a>
@@ -70,15 +75,18 @@
       </nav>
     </div>
   </header>
+
   <main>
     <h1 class="visually-hidden">Mishka - интернет магазин изделий ручной работы. Форма заказа.</h1>
     <div class="page-form__title">
       <h2>Вязание на заказ</h2>
     </div>
+
     <section class="page-form__section">
       <div class="page-form__subtitle">
         <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
+
       <form class="page-form__form form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__data">
           <div class="form__wrapper">
@@ -86,34 +94,52 @@
               <span>Тип</span>
             </div>
             <div class="form__group form__group--radio">
-              <input id="accessory" type="radio" name="type" checked>
-              <label for="accessory">Аксессуар для интерьера</label>
-              <input id="toy" type="radio" name="type">
-              <label for="toy">Детская игрушка</label>
+              <div>
+                <input id="accessory" type="radio" name="type" checked>
+                <label for="accessory">Аксессуар для интерьера</label>
+              </div>
+              <div>
+                <input id="toy" type="radio" name="type">
+                <label for="toy">Детская игрушка</label>
+              </div>
             </div>
           </div>
         </fieldset>
+
         <fieldset class="form__data form__data--color">
           <div class="form__wrapper">
             <div class="form__title">
               <span>Цвет</span>
             </div>
             <div class="form__group form__group--checkbox">
-              <input id="white" type="checkbox" checked>
-              <label for="white">Белый</label>
-              <input id="grey" type="checkbox" checked>
-              <label for="grey">Серый</label>
-              <input id="tiffany" type="checkbox">
-              <label for="tiffany">«Тиффани»</label>
-              <input id="black" type="checkbox">
-              <label for="black">Черный</label>
-              <input id="pink" type="checkbox">
-              <label for="pink">Розовый</label>
-              <input id="orange" type="checkbox">
-              <label for="orange">Оранжевый</label>
+              <div>
+                <input id="white" type="checkbox" checked>
+                <label for="white">Белый</label>
+              </div>
+              <div>
+                <input id="grey" type="checkbox" checked>
+                <label for="grey">Серый</label>
+              </div>
+              <div>
+                <input id="tiffany" type="checkbox">
+                <label for="tiffany">«Тиффани»</label>
+              </div>
+              <div>
+                <input id="black" type="checkbox">
+                <label for="black">Черный</label>
+              </div>
+              <div>
+                <input id="pink" type="checkbox">
+                <label for="pink">Розовый</label>
+              </div>
+              <div>
+                <input id="orange" type="checkbox">
+                <label for="orange">Оранжевый</label>
+              </div>
             </div>
           </div>
         </fieldset>
+
         <fieldset class="form__data">
           <div class="form__wrapper">
             <div class="form__title form__title--text">
@@ -135,6 +161,7 @@
             </div>
           </div>
         </fieldset>
+
         <fieldset class="form__data form__data--color">
           <div class="form__wrapper">
             <div class="form__group form__group--contacts">
@@ -163,6 +190,7 @@
             </div>
           </div>
         </fieldset>
+
         <fieldset class="form__data">
           <div class="form__wrapper">
             <div class="form__title">
@@ -173,6 +201,7 @@
             </div>
           </div>
         </fieldset>
+
         <div class="form__wrapper form__wrapper--button">
           <input class="form__button button" type="submit" value="Отправить заказ">
           <p>*Поля обязательны для заполнения</p>
@@ -180,6 +209,7 @@
       </form>
     </section>
   </main>
+
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
@@ -190,6 +220,7 @@
           <span class="visually-hidden">Логотип магазина Mishka</span>
         </a>
       </div>
+
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -218,6 +249,7 @@
           </li>
         </ul>
       </div>
+
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="#">
           <span>Разработано</span>
