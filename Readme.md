@@ -3,6 +3,7 @@
 - Flex-box
 - Gulp & SCSS
 - Adaptive: 320px, 768px, 1150px
+- Mobile First
 - BEM 
 - svg-sprite, WebP
 - Chrome, Opera, Firefox, Safari, Edge
